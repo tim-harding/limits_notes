@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage{fouriernc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\graphicspath{ {./images/} }
+
+\newcommand{\curly}[1]{\left\{      #1 \right\}     }
+\newcommand{\round}[1]{\left(       #1 \right)      }
+\newcommand{\hard} [1]{\left[       #1 \right]      }
+\newcommand{\abs}  [1]{\left|       #1 \right|      }
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil} [1]{\left\lceil  #1 \right\rceil }
+\newcommand{\R}    [0]{\mathbb{R}                   }
+\newcommand{\Z}    [0]{\mathbb{Z}                   }
+\newcommand{\N}    [0]{\mathbb{N}                   }
+
+\setlength{\parindent}{0in}
+
+\begin{document}
+\begin{multicols}{2}
+
+\section*{Divergence tests}
+
+\subsection*{Simple}
+\begin{align*}
+    \lim_{n\to\infty} a_n \neq 0 \implies \sum a_n = \infty
+\end{align*}
+
+\subsection*{Integral}
+\begin{align*}
+    \int f(x)\ dx = \infty &\implies \sum f(n) = \infty \\
+    \int f(x)\ dx < \infty &\implies \sum f(n) < \infty
+\end{align*}
+
+\subsection*{Comparison}
+\begin{align*}
+    b_n > a_n,\ \sum a_n = \infty &\implies \sum b_n = \infty \\
+    b_n < a_n,\ \sum a_n < \infty &\implies \sum b_n < \infty
+\end{align*}
+
+\subsection*{Ratio}
+\begin{align*}
+    \lim_{n\to\infty} \frac{a_{n+1}}{a_n} < 1 &\implies \sum a_n < \infty\\
+    \lim_{n\to\infty} \frac{a_{n+1}}{a_n} > 1 &\implies \sum a_n = \infty
+\end{align*}
+
+\subsection*{Root}
+\begin{align*}
+    \lim_{n\to\infty} \sqrt[n]{a_n} < 1 &\implies \sum a_n < \infty \\
+    \lim_{n\to\infty} \sqrt[n]{a_n} > 1 &\implies \sum a_n = \infty
+\end{align*}
+
+\subsection*{Limit comparison}
+Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$.
+\begin{enumerate}
+    \item If $L=0$ and $\sum b_n < \infty$ then $\sum a_n < \infty$.
+    \item If $0<L<\infty$ then $\sum a_n$ and $\sum b_n$ behave the same.
+    \item If $L=\infty$ and $\sum b_n = \infty$ then $\sum a_n = \infty$.
+\end{enumerate}
+
+\end{multicols}
+\end{document}
