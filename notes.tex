@@ -34,16 +34,16 @@
     \lim_{n\to\infty} a_n \neq 0 \implies \sum a_n = \infty
 \end{align*}
 
+\subsection*{Direct Comparison}
+\begin{align*}
+    b_n > a_n,\ \sum a_n = \infty &\implies \sum b_n = \infty \\
+    b_n < a_n,\ \sum a_n < \infty &\implies \sum b_n < \infty
+\end{align*}
+
 \subsection*{Integral}
 \begin{align*}
     \int f(x)\ dx = \infty &\implies \sum f(n) = \infty \\
     \int f(x)\ dx < \infty &\implies \sum f(n) < \infty
-\end{align*}
-
-\subsection*{Comparison}
-\begin{align*}
-    b_n > a_n,\ \sum a_n = \infty &\implies \sum b_n = \infty \\
-    b_n < a_n,\ \sum a_n < \infty &\implies \sum b_n < \infty
 \end{align*}
 
 \subsection*{Ratio}
@@ -65,6 +65,13 @@ Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$.
     \item If $0<L<\infty$ then $\sum a_n$ and $\sum b_n$ behave the same.
     \item If $L=\infty$ and $\sum b_n = \infty$ then $\sum a_n = \infty$.
 \end{enumerate}
+
+\subsection*{Absolute convergence}
+\begin{align*}
+    a_n \to 0 \implies \sum (-1)^{n} a_n < \infty
+\end{align*}
+
+
 
 \section*{Power series}
 \begin{align*}
