@@ -66,5 +66,23 @@ Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$.
     \item If $L=\infty$ and $\sum b_n = \infty$ then $\sum a_n = \infty$.
 \end{enumerate}
 
+\section*{Power series}
+\begin{align*}
+    \forall \abs{x} < 1,\quad \sum_{n=0}^\infty x^n = \frac{1}{1-x}
+\end{align*}
+
+Remember that $b_n$ refers to the coefficient of $x_n$, not necessarily the coefficient of the $n$th term.
+
+Given $\sum_{n=0}^\infty b_n (x-c)^n$, we have absolute convergence when
+\begin{align*}
+    \abs{x-c} < \lim_{n\to\infty} \abs{\frac{b_{n+1}}{b_n}}
+\end{align*}
+
+\subsection*{Taylor series}
+Centered around $x=c$,
+\begin{align*}
+    f(x) &= \sum_{k=0}^\infty \frac{f^{(n)}(c) (x-c)^k}{k!}
+\end{align*}
+
 \end{multicols}
 \end{document}
