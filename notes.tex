@@ -63,6 +63,21 @@ $\forall \epsilon > 0$, $\exists \delta \in (0, \delta_0)$, $\forall x : 0 < x_0
 
 
 
+\section*{Series}
+
+\subsection*{Geometric}
+\begin{align*}
+    \sum_{n=0}^\infty r^n = \frac{1}{1-r}
+\end{align*}
+
+\subsection*{Telescoping}
+\begin{align*}
+    \frac{1}{n^2 + 3n + 2} = \frac{1}{(n+1)(n+2)} = \frac{a}{n+1} + \frac{b}{n+2}
+\end{align*}
+and look for cancellations.
+
+
+
 \section*{Divergence tests}
 
 \subsection*{Simple}
@@ -110,10 +125,6 @@ Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$.
 
 
 \section*{Power series}
-\begin{align*}
-    \forall \abs{x} < 1,\quad \sum_{n=0}^\infty x^n = \frac{1}{1-x}
-\end{align*}
-
 Remember that $b_n$ refers to the coefficient of $x_n$, not necessarily the coefficient of the $n$th term.
 
 Given $\sum_{n=0}^\infty b_n (x-c)^n$, we have absolute convergence when
